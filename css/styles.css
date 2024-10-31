@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #a0a0a0;
+}
 h1,h2,h3{
     color: #333;
 }
@@ -57,18 +60,18 @@ nav{
 
 .default-btn {
     padding: 15px 20px;
-    background-color: #2cc76a;
+    background-color: #0A84FF;
     border-radius: 5px  ;
 }
 
 .navbar-items .default-btn:hover{
-    background-color: #22bb5f;
+    background-color: #389afc;
     color: #fff;
 }
 
 /* Banner */
 .main-banner{
-    background-image: url(../img/mainbanner.png);
+    background-image: url(../img/bannertecno.jpg);
     background-size: cover;
     background-position: center;
     padding: 10rem 0;
@@ -116,7 +119,7 @@ nav{
     padding: 20px;
 }
 
-.fas{
+.fas , .fa-regular, .fa-solid{
     font-size: 60px;
     margin-bottom: 15px;
 }
@@ -125,87 +128,76 @@ nav{
     color: #2cc76a;
 }
 
-.fa-rocket{
+.fa-computer{
     color: #ef3f29;
 }
 
-.fa-comments{
+.fa-newspaper{
     color: #ef8f29;
 }
 
 
 /* price and plans */
-.pricing-container{
+.posts-container{
     padding-bottom: 5rem;
     text-align: center;
 }
 
-.pricing-container h2{
-    font-size: 36px;
+.posts-container h2{
+    font-size: 24px;
+    padding-bottom: 5px;
+    color: #000;
 }
 
-.pricing-container p{
-    font-size: 20px;
+.posts-container p{
+    font-size: 16px;
+    color: #333;
 }
 
-.plans-container{
+.posts-containers{
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: 50px auto 0;
+    color: #333333;
 }
 
-.plan{
+.posts{
+    display: flex;
+    margin-left: 400px;
+}
+
+.post{
+
     flex: 1;
     max-width: 275px;
-    margin: 0 20px;
+    margin: 0 40px;
+    line-height: 20px;
+    padding-top: 30px;
 }
 
-.plan ul{
-    padding: 0;
+.post img{
+    max-width: 300px;
+    image-resolution: unset;
 }
 
-.plan li{
-    list-style: none;
-    height: 50px;
-    line-height: 50px;
-    background-color: #e8e9ea;
-    color: #333;
+.post-info{
+    padding-left: 25px;
 }
 
-.plan .price{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #2cc762;
+.btn-sabermais{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    background-color: #0A84FF;
     color: #fff;
-    text-align: center;
-    line-height: 120px;
-    margin: 0 auto -50px;
-    font-size: 18px;
-    position: relative;
+    transition: 0.6s;
 }
 
-.plan .plan-name{
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #202b34;
-    padding: 50px 0;
-}
-
-.plan .plan-btn{
-    background-color: #2cc762;
-    color: #fff;
-    font-size: 24px;
-    height: 75px;
-    line-height: 75px;
-    cursor: pointer;
-}
-
-.plan .recommended {
-    background-color: #f45c57;
+.btn-sabermais:hover{
+    border: #0A84FF solid 1px;
+    background-color: #a0a0a0;
+    color: #0A84FF;
 }
 
 /* search domain */
@@ -216,7 +208,7 @@ nav{
 }
 
 .searchdomain-container h2{
-    color: #fff;
+    color: #111;
     font-size: 42px;
     margin-bottom: 15px;
 }
@@ -242,7 +234,7 @@ nav{
 }
 
 .searchdomain-container input[type="submit"]{
-    background-color: #2cc76a;
+    background-color: #0A84FF;
     padding: 15px 30px;
     color: #fff;
     font-size: 24px;
@@ -289,9 +281,13 @@ nav{
 .contact-container input[type="submit"]{
     display: block;
     margin: 0 auto;
-    background-color: #2cc76a;
+    background-color: #0A84FF;
     color: #fff;
     cursor: pointer;
+}
+
+.contact-container input[type="submit"]:hover{
+    background-color: #429ffc;
 }
 
 /* footer */
@@ -305,16 +301,20 @@ footer{
 
 /* small laptos a partir de 1100px*/
 @media (max-width: 1100px) {
-    .plans-container{
+    .posts-container{
         width: 95%;
     }
 
-    .plan{
+    .post{
         margin: 0 5px;
+    }
+
+    html, body {
+        overflow-x: hidden;
     }
 }
 
-/* tablet 900px */
+/* Tela de tablets, a partir de 900px */
 @media (max-width: 900px) {
     .main-banner p{
         padding: 0 6rem;
@@ -325,10 +325,9 @@ footer{
     }
 }
 
-/* celular 576px */
-
+/* Tela de celulares, a partir de 576px */
 @media (max-width: 576px){
-    html,body{
+    html, body{
         overflow: hidden;
     }
 
